@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="responsive.css">
+    <style>
+        body{
+    background:rgb(202, 154, 154);
+    font-size: 16px;
+}
+.container {
+    width: auto;
+    display:grid;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows:repeat(3,auto);
+    border:5px solid;
+}
+.container div{
+    
+    border: 1px solid red;
+    
+}
+@media (max-width: 576px){
+    body{
+      background: violet;
+      font-size: 10px;
+          }
+    .container{
+        width: 200px;
+        grid-template-columns: repeat(1,auto);
+        grid-template-rows: repeat(9,auto);
+        font-size: 12px;
+        margin:auto;
+    }
+    h1{
+        text-align: center;
+    }
+}
+.container2{
+    display:grid;
+    grid-template-columns:repeat(3,auto);
+    grid-template-rows:repeat(3,auto);
+    border:5px solid blue;
+}
+.container2 div{
+    border:4px solid skyblue;
+}
+    </style>
+
+</head>
+<body>
+    <h1>integrando responsive a grid</h1>
+    <div class="container">
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, incidunt.</div>
+    <div>Amet assumenda officia suscipit consequuntur eveniet harum voluptate, ratione provident.</div>
+    <div>Non totam commodi nisi. Nostrum laboriosam aperiam iure. Accusamus, vel!</div>
+    <div>Molestias dicta optio esse perferendis temporibus, doloribus odio inventore veritatis?</div>
+    <div>Aperiam nihil sunt laboriosam fugiat dicta expedita cupiditate. Quo, magni.</div>
+    <div>Repellat perferendis ab quidem tenetur labore, velit in earum obcaecati!</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, necessitatibus.</div>
+    <div>Veniam nostrum sint deleniti sed rem eius nisi commodi quam.</div>
+    <div>Modi commodi id sint soluta natus! Aliquam aliquid quasi a!</div>
+</div>
+<div class="container2">
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam odit aperiam blanditiis sunt error voluptate.</div>
+    <div>Architecto consequatur, voluptatum aliquam, iure iusto eaque libero nam excepturi sapiente illum eum reiciendis odio.</div>
+    <div>Numquam eum debitis molestiae! Dicta quaerat at voluptatibus doloremque a qui explicabo sit vitae veniam.</div>
+    <div>Tenetur aliquid blanditiis maxime. Unde amet ullam eligendi! Tenetur praesentium pariatur modi, esse assumenda similique.</div>
+    <div>Nam ut aut dolor hic excepturi possimus blanditiis, facilis ex, quas inventore at tenetur nisi?</div>
+    <div>Hic, minima repellat sed quasi beatae, dolores culpa suscipit debitis at officia, soluta repudiandae laboriosam!</div>
+</div>
+</body>
+</html>
